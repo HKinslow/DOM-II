@@ -1,15 +1,13 @@
 // Your code goes here
 
 let navTag = document.querySelectorAll('.nav-link');
-console.log(navTag);
 navTag.forEach((element, i) => {
-    navTag[i].addEventListener('click', (callback => {
+    navTag[i].addEventListener('click', (cb => {
         alert('You clicked the nav tag!');
     }));
 })
 
 let welcome = document.querySelector('h2');
-console.log(welcome);
 welcome.addEventListener('mouseover', (cb => {
     welcome.style.color = "green";
 }));
@@ -29,13 +27,12 @@ document.addEventListener('scroll', (cb => {
 }));
 
 let destination = document.querySelector('h4');
-console.log(destination);
 window.addEventListener('focus', (cb => {
     destination.style.background = 'red';
 }));
 
 let content = document.querySelector('.text-content h2');
-console.log(content);
 document.addEventListener('dblclick', function(){
-    console.log("I was clicked!");
+    alert("I was clicked!");
 });
+
